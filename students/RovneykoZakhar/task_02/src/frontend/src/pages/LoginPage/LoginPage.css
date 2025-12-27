@@ -1,0 +1,35 @@
+@reference "tailwindcss";
+
+@layer components {
+  .login {
+    @apply w-full max-w-md rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-xl p-6;
+  }
+
+  .login__title {
+    @apply text-xl font-semibold text-white;
+  }
+
+  .login__subtitle {
+    @apply mt-1 text-sm text-white/60;
+  }
+
+  .login__form {
+    @apply mt-6 space-y-4;
+  }
+
+  .login__actions {
+    @apply pt-1;
+  }
+
+  .login__alt {
+    @apply mt-4 flex items-center justify-center gap-2 text-sm;
+  }
+
+  .login__alt-text {
+    @apply text-white/60;
+  }
+
+  .login__alt-link {
+    @apply text-white/85 underline underline-offset-4 hover:text-white;
+  }
+}

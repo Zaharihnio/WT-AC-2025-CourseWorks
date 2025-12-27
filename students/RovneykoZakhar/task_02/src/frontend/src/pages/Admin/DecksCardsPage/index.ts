@@ -1,0 +1,1 @@
+export { DecksCardsPage } from './DecksCardsPage'

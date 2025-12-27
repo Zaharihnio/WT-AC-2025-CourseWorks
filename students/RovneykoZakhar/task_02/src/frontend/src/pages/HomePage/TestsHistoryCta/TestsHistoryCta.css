@@ -1,0 +1,20 @@
+@reference "tailwindcss";
+
+@layer components {
+  .TestsHistoryCta {
+    @apply rounded-2xl border border-white/15 bg-black/20 p-4
+           flex items-center justify-between gap-4;
+  }
+
+  .TestsHistoryCta__text {
+    @apply min-w-0;
+  }
+
+  .TestsHistoryCta__title {
+    @apply font-bold text-lg leading-tight;
+  }
+
+  .TestsHistoryCta__desc {
+    @apply text-sm text-white/70 mt-1;
+  }
+}

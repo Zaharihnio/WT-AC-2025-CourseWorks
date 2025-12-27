@@ -1,0 +1,29 @@
+@reference "tailwindcss";
+
+.adminNavCard {
+  @apply mt-6 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-md;
+}
+
+.adminNavCard__header {
+  @apply flex items-start justify-between gap-4;
+}
+
+.adminNavCard__title {
+  @apply text-base font-semibold;
+}
+
+.adminNavCard__subtitle {
+  @apply mt-1 text-sm text-white/70;
+}
+
+.adminNavCard__badge {
+  @apply rounded-full border border-emerald-400/30 bg-emerald-400/10 px-2 py-1 text-xs text-emerald-200;
+}
+
+.adminNavCard__actions {
+  @apply mt-4 flex flex-wrap gap-3;
+}
+
+.adminNavCard__link {
+  @apply inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm hover:bg-white/10;
+}

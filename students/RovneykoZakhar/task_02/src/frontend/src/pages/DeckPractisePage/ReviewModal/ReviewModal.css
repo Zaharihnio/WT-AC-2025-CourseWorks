@@ -1,0 +1,59 @@
+@reference "tailwindcss";
+
+.DeckPractiseResultsStep__modalOverlay {
+  @apply fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm;
+}
+
+.DeckPractiseResultsStep__modal {
+  @apply w-full max-w-md rounded-2xl border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur;
+}
+
+.DeckPractiseResultsStep__modalTitle {
+  @apply text-base font-semibold text-white/90 text-center;
+}
+
+.DeckPractiseResultsStep__starsRow {
+  @apply mt-4 flex items-center justify-center gap-1;
+}
+
+.DeckPractiseResultsStep__star {
+  @apply inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 p-2 transition;
+  @apply hover:border-white/20 hover:bg-white/10 active:scale-95;
+  background: transparent;
+}
+
+/* ВАЖНО: фикс размеров svg */
+.DeckPractiseResultsStep__star svg {
+  @apply block transition;
+  width: 22px;
+  height: 22px;
+
+  /* ВАЖНО: чтобы иконка была видна */
+  fill: rgba(255, 255, 255, 0.28);
+}
+
+.DeckPractiseResultsStep__star--filled svg {
+  fill: rgba(255, 255, 255, 0.92);
+}
+
+.DeckPractiseResultsStep__modalHint {
+  @apply mt-2 text-xs text-white/50 text-center;
+}
+
+.DeckPractiseResultsStep__modalError {
+  @apply mt-2 text-sm text-red-300;
+}
+
+.DeckPractiseResultsStep__modalActions {
+  @apply mt-4 flex items-center justify-end gap-2;
+}
+
+.DeckPractiseResultsStep__modalBtn {
+  @apply rounded-xl border border-white/10 bg-white/10 px-4 py-2 text-sm font-semibold text-white/90 transition;
+  @apply hover:border-white/20 hover:bg-white/15 disabled:cursor-not-allowed disabled:opacity-60;
+}
+
+.DeckPractiseResultsStep__modalBtn--ghost {
+  @apply bg-white/5;
+  @apply hover:bg-white/10;
+}

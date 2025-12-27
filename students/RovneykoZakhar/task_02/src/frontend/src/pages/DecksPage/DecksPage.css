@@ -1,0 +1,71 @@
+@reference "tailwindcss";
+
+.DecksPage {
+  @apply w-full py-6;
+}
+
+.DecksPage__header {
+  @apply flex items-center justify-between gap-3;
+}
+
+.DecksPage__title {
+  @apply text-2xl font-semibold;
+}
+
+.DecksPage__reload {
+  @apply rounded-lg bg-white/10 px-4 py-2 text-sm font-medium transition hover:bg-white/15 disabled:opacity-60;
+}
+
+.DecksPage__error {
+  @apply mt-4;
+}
+
+.DecksPage__loading {
+  @apply flex items-center justify-center h-24 mt-6 text-white/70;
+}
+
+.DecksPage__empty {
+  @apply mt-6 rounded-xl border border-white/10 bg-white/5 p-4 text-white/70;
+}
+
+.DecksPage__grid {
+  @apply mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+.DecksPage__card {
+  @apply cursor-pointer rounded-2xl border border-white/10 bg-white/5 p-4 text-left transition hover:bg-white/10 hover:border-white/15;
+}
+
+.DecksPage__cardTop {
+  @apply flex items-start justify-between gap-3;
+}
+
+.DecksPage__cardTitle {
+  @apply text-lg font-semibold leading-snug;
+}
+
+.DecksPage__cardMeta {
+  @apply flex shrink-0 items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs text-white/80;
+}
+
+.DecksPage__cardDesc {
+  @apply mt-3 line-clamp-3 whitespace-normal text-sm text-white/80;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.DecksPage__cardDesc--muted {
+  @apply text-white/50;
+}
+
+.DecksPage__cardBottom {
+  @apply mt-4 flex items-center justify-between gap-3 text-xs text-white/60;
+}
+
+.DecksPage__cardId {
+  @apply rounded-md bg-white/10 px-2 py-1;
+}
+
+.DecksPage__cardDate {
+  @apply whitespace-nowrap;
+}

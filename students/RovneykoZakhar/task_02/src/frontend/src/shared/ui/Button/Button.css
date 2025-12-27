@@ -1,0 +1,68 @@
+@reference "tailwindcss";
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center
+      select-none cursor-pointer
+      rounded-xl font-medium transition
+      border backdrop-blur-md
+      focus:outline-none;
+  }
+
+  .btn:focus-visible {
+    @apply ring-2 ring-white/30;
+  }
+
+  .btn:disabled {
+    @apply opacity-60 cursor-not-allowed;
+  }
+
+  /* sizes */
+  .btn--sm {
+    @apply h-9 px-3 text-sm;
+  }
+  .btn--md {
+    @apply h-10 px-4 text-sm;
+  }
+  .btn--lg {
+    @apply h-11 px-5 text-base;
+  }
+
+  /* variants */
+  .btn--primary {
+    @apply bg-white/10 border-white/15 text-white;
+  }
+  .btn--primary:hover {
+    @apply bg-white/14;
+  }
+
+  .btn--secondary {
+    @apply bg-white/6 border-white/12 text-white/90;
+  }
+  .btn--secondary:hover {
+    @apply bg-white/10;
+  }
+
+  .btn--ghost {
+    @apply bg-transparent border-transparent text-white/85;
+  }
+  .btn--ghost:hover {
+    @apply bg-white/8 border-white/10;
+  }
+
+  .btn--danger {
+    @apply bg-red-500/12 border-red-400/20 text-red-100;
+  }
+  .btn--danger:hover {
+    @apply bg-red-500/18;
+  }
+
+  .btn:active {
+    @apply scale-[0.99];
+  }
+
+  /* submitting state: просто затемняем */
+  .btn--submitting {
+    @apply cursor-wait filter brightness-75;
+  }
+}

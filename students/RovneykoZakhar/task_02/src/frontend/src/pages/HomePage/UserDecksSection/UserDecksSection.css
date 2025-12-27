@@ -1,0 +1,103 @@
+@reference "tailwindcss";
+
+.UserDecksSection {
+  @apply w-full py-6;
+}
+
+.UserDecksSection__header {
+  @apply flex items-start justify-between gap-3;
+}
+
+.UserDecksSection__headLeft {
+  @apply flex flex-col gap-1;
+}
+
+.UserDecksSection__title {
+  @apply text-2xl font-semibold;
+}
+
+.UserDecksSection__subtitle {
+  @apply text-sm text-white/60;
+}
+
+.UserDecksSection__actions {
+  @apply flex items-center gap-2;
+}
+
+.UserDecksSection__error {
+  @apply mt-4;
+}
+
+.UserDecksSection__loading {
+  @apply flex items-center justify-center h-24 mt-6 text-white/70;
+}
+
+.UserDecksSection__empty {
+  @apply mt-6 rounded-2xl border border-white/10 bg-white/5 p-5 text-white/70 flex flex-col gap-3;
+}
+
+.UserDecksSection__emptyText {
+  @apply text-sm leading-relaxed;
+}
+
+.DecksPage__grid {
+  @apply mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+.DecksPage__card {
+  @apply cursor-pointer rounded-2xl border border-white/10 bg-white/5 p-4 text-left transition hover:bg-white/10 hover:border-white/15;
+}
+
+.DecksPage__cardTop {
+  @apply flex items-start justify-between gap-3;
+}
+
+.DecksPage__cardTitle {
+  @apply text-lg font-semibold leading-snug;
+}
+
+.DecksPage__cardMeta {
+  @apply flex shrink-0 items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs text-white/80;
+}
+
+.DecksPage__cardDesc {
+  @apply mt-3 line-clamp-3 whitespace-normal text-sm text-white/80;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.DecksPage__cardDesc--muted {
+  @apply text-white/50;
+}
+
+.DecksPage__cardBottom {
+  @apply mt-4 flex items-center justify-between gap-3 text-xs text-white/60;
+}
+
+.DecksPage__cardId {
+  @apply rounded-md bg-white/10 px-2 py-1;
+}
+
+.DecksPage__cardDate {
+  @apply whitespace-nowrap;
+}
+
+.UserDecksSection__browseCard {
+  @apply border-dashed hover:bg-white/10;
+}
+
+.UserDecksSection__browseTitle {
+  @apply text-lg font-semibold;
+}
+
+.UserDecksSection__browseDesc {
+  @apply mt-2 text-sm text-white/70;
+}
+
+.UserDecksSection__browseHint {
+  @apply mt-4 text-xs text-white/60;
+}
+
+.UserDecksSection__footer {
+  @apply mt-3 text-xs text-white/50;
+}

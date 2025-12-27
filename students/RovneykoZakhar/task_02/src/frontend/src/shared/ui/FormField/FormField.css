@@ -1,0 +1,45 @@
+@reference "tailwindcss";
+
+@layer components {
+  .form-field {
+    @apply space-y-2;
+  }
+
+  .form-field__label {
+    @apply text-sm text-white/80;
+  }
+
+  .form-field__control {
+    @apply relative;
+  }
+
+  .form-field__input {
+    @apply w-full rounded-xl border border-white/10 bg-black/20 px-3 py-2 text-white outline-none;
+    @apply focus:border-white/25;
+  }
+
+  .form-field__right-slot {
+    @apply absolute right-2 top-1/2 -translate-y-1/2;
+  }
+
+  .form-field--with-right-slot .form-field__input {
+    @apply pr-14;
+  }
+
+  .form-field__hint {
+    @apply text-xs text-white/50;
+  }
+
+  .form-field__error {
+    @apply text-xs text-rose-200;
+  }
+
+  .form-field--invalid .form-field__input {
+    @apply border-rose-500/40;
+  }
+
+  .form-field__icon-btn {
+    @apply rounded-lg px-2 py-1 text-xs text-white/70 hover:text-white;
+    @apply bg-white/5 hover:bg-white/10 border border-white/10;
+  }
+}

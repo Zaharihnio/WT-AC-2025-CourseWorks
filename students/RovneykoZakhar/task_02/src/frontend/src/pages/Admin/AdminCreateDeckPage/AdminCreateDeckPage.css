@@ -1,0 +1,117 @@
+@reference "tailwindcss";
+
+.AdminCreateDeckPage {
+  @apply py-8;
+}
+
+.AdminCreateDeckPage__header {
+  @apply mb-6 flex items-start justify-between gap-4;
+}
+
+.AdminCreateDeckPage__title {
+  @apply text-2xl font-semibold tracking-tight;
+}
+
+.AdminCreateDeckPage__subtitle {
+  @apply mt-1 text-sm text-white/60;
+}
+
+.AdminCreateDeckPage__headerActions {
+  @apply flex items-center gap-3;
+}
+
+.AdminCreateDeckPage__layout {
+  @apply grid gap-4 lg:grid-cols-2;
+}
+
+.AdminCreateDeckPage__panel {
+  @apply rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md;
+}
+
+.AdminCreateDeckPage__panelTop {
+  @apply mb-4 flex items-start justify-between gap-4;
+}
+
+.AdminCreateDeckPage__panelTitle {
+  @apply text-lg font-semibold;
+}
+
+.AdminCreateDeckForm {
+  @apply mt-4 space-y-4;
+}
+
+.AdminCreateDeckForm__actions {
+  @apply mt-2 flex flex-wrap items-center gap-3;
+}
+
+.AdminField {
+  @apply block;
+}
+
+.AdminField__label {
+  @apply mb-2 text-sm text-white/70;
+}
+
+.AdminField__input {
+  @apply w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-white/40;
+}
+
+.AdminField__input:focus {
+  @apply border-white/20;
+}
+
+.AdminField__textarea {
+  @apply w-full resize-none rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-white/40;
+}
+
+.AdminField__textarea:focus {
+  @apply border-white/20;
+}
+
+.CardFilters {
+  @apply mb-4 grid gap-3;
+}
+
+.CardFilters__meta {
+  @apply text-sm text-white/60;
+}
+
+.AdminEmpty {
+  @apply rounded-2xl border border-white/10 bg-white/5 p-6 text-white/70;
+}
+
+.CardsList {
+  @apply max-h-[560px] space-y-2 overflow-auto pr-1;
+}
+
+.CardRow {
+  @apply flex cursor-pointer gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:border-white/20;
+}
+
+.CardRow__check {
+  @apply mt-1 h-4 w-4 accent-white/90;
+}
+
+.CardRow__body {
+  @apply min-w-0 flex-1;
+}
+
+.CardRow__front {
+  @apply truncate text-sm font-semibold;
+}
+
+.CardRow__back {
+  @apply mt-1 truncate text-sm text-white/70;
+}
+
+.CardRow__tags {
+  @apply mt-3 flex flex-wrap gap-2;
+}
+
+.CardRow__tags--muted {
+  @apply text-sm text-white/40;
+}
+
+.TagChip {
+  @apply rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/75;
+}

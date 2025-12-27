@@ -1,0 +1,158 @@
+@reference "tailwindcss";
+
+@layer components {
+  .DeckPractisePage {
+    @apply pb-10;
+  }
+
+  .DeckPractisePage__intro {
+    @apply max-w-2xl mx-auto grid gap-4;
+  }
+
+  .DeckPractisePage__deckHeader {
+    @apply grid gap-1 text-center;
+  }
+
+  .DeckPractisePage__deckName {
+    @apply text-2xl md:text-3xl font-bold leading-tight;
+  }
+
+  .DeckPractisePage__deckMeta {
+    @apply text-white/70 flex flex-wrap items-center justify-center gap-2;
+  }
+
+  .DeckPractisePage__deckMetaItem {
+    @apply text-sm;
+  }
+
+  .DeckPractisePage__metaDot {
+    @apply text-white/40;
+  }
+
+  .DeckPractisePage__rulesCard {
+    @apply rounded-2xl border border-white/10 bg-white/5 p-4 md:p-6;
+  }
+
+  .DeckPractisePage__rulesTitle {
+    @apply m-0 text-xl md:text-2xl font-semibold;
+  }
+
+  .DeckPractisePage__rulesText {
+    @apply mt-3 grid gap-3;
+  }
+
+  .DeckPractisePage__rulesCard {
+    @apply relative overflow-hidden rounded-2xl border border-white/10 p-4 md:p-6;
+    @apply bg-white/5 shadow-[0_12px_40px_rgba(0,0,0,0.35)];
+  }
+
+  /* мягкий градиентный блик */
+  .DeckPractisePage__rulesCard::before {
+    content: '';
+    @apply pointer-events-none absolute inset-0;
+    background: radial-gradient(
+      900px 300px at 20% 0%,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0) 60%
+    );
+  }
+
+  /* тонкая “линия” сверху */
+  .DeckPractisePage__rulesCard::after {
+    content: '';
+    @apply pointer-events-none absolute left-0 right-0 top-0 h-px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.22),
+      rgba(255, 255, 255, 0)
+    );
+  }
+
+  .DeckPractisePage__rulesTitle {
+    @apply m-0 text-xl md:text-2xl font-semibold tracking-tight;
+  }
+
+  .DeckPractisePage__rulesText {
+    @apply mt-3 grid gap-3 text-white/85 leading-relaxed;
+  }
+
+  /* разделитель между текстом и кнопкой */
+  .DeckPractisePage__rulesDivider {
+    @apply my-4 h-px w-full bg-white/10;
+  }
+
+  /* список чуть “чище” */
+  .DeckPractisePage__list {
+    @apply list-none pl-0 grid gap-2;
+  }
+
+  .DeckPractisePage__list li {
+    @apply relative pl-6 text-white/85;
+  }
+
+  .DeckPractisePage__list li::before {
+    content: '';
+    @apply absolute left-0 top-[0.55rem] h-2 w-2 rounded-full bg-white/35;
+  }
+
+  /* приглушённый текст внизу */
+  .DeckPractisePage__muted {
+    @apply text-white/60;
+  }
+
+  .DeckPractisePage__actions {
+    @apply mt-4 grid gap-2;
+  }
+
+  .DeckPractisePage__gameBottom {
+    @apply max-w-md mx-auto mt-4 flex items-center justify-between gap-3;
+  }
+
+  .DeckPractisePage__gameBack {
+    @apply bg-transparent border-0 text-white/70 cursor-pointer;
+  }
+
+  .DeckPractisePage__gameBack:hover {
+    @apply text-white underline;
+  }
+
+  .DeckPractisePage__gameNext {
+    @apply px-4 py-2 rounded-xl border border-white/10 bg-white/5 text-white/90;
+    @apply cursor-pointer;
+  }
+
+  .DeckPractisePage__gameNext:hover {
+    @apply bg-white/10;
+  }
+
+  .DeckPractisePage__gameNext:disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+
+  /* Review bar (admin-glass style) */
+  .DeckPractiseResultsStep__reviewBar {
+    @apply mb-2 flex items-center flex-col gap-2 text-center;
+  }
+
+  /* Текст “Проверяем…” и “Средняя …” */
+  .DeckPractiseResultsStep__reviewHint {
+    @apply text-xs text-white/50;
+  }
+
+  /* “Ваш рейтинг …” */
+  .DeckPractiseResultsStep__reviewDone {
+    @apply text-sm font-semibold text-white/90;
+  }
+
+  /* Кнопка “Оцените деку” */
+  .DeckPractiseResultsStep__reviewBtn {
+    @apply inline-flex w-fit items-center justify-center rounded-xl border border-white/10 bg-white/10 px-4 py-2 text-sm font-semibold text-white/90 transition;
+    @apply hover:border-white/20 hover:bg-white/15 active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  /* Ошибка проверки */
+  .DeckPractiseResultsStep__reviewError {
+    @apply text-sm text-red-300;
+  }
+}

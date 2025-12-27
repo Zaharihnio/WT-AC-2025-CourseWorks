@@ -1,0 +1,35 @@
+@reference "tailwindcss";
+
+@layer components {
+  .register {
+    @apply w-full max-w-md rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-xl p-6;
+  }
+
+  .register__title {
+    @apply text-xl font-semibold text-white;
+  }
+
+  .register__subtitle {
+    @apply mt-1 text-sm text-white/60;
+  }
+
+  .register__form {
+    @apply mt-6 space-y-4;
+  }
+
+  .register__actions {
+    @apply pt-1;
+  }
+
+  .register__alt {
+    @apply mt-4 flex items-center justify-center gap-2 text-sm;
+  }
+
+  .register__alt-text {
+    @apply text-white/60;
+  }
+
+  .register__alt-link {
+    @apply text-white/85 underline underline-offset-4 hover:text-white;
+  }
+}

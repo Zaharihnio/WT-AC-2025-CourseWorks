@@ -1,0 +1,19 @@
+@reference "tailwindcss";
+
+@layer components {
+  .content {
+    @apply mx-auto w-full max-w-6xl px-2;
+  }
+
+  @variant sm {
+    .content {
+      @apply px-4;
+    }
+  }
+
+  @variant lg {
+    .content {
+      @apply px-6;
+    }
+  }
+}

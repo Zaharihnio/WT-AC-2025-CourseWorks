@@ -1,0 +1,144 @@
+@reference "tailwindcss";
+
+.DeckDetailPage {
+  @apply w-full py-6 pb-28;
+}
+
+.DeckDetailPage__top {
+  @apply mb-4 flex items-center justify-between gap-3;
+}
+
+.DeckDetailPage__back {
+  @apply rounded-lg bg-white/10 px-4 py-2 text-sm font-medium transition hover:bg-white/15;
+}
+
+.DeckDetailPage__reload {
+  @apply rounded-lg bg-white/10 px-4 py-2 text-sm font-medium transition hover:bg-white/15 disabled:opacity-60;
+}
+
+.DeckDetailPage__error {
+  @apply mt-4;
+}
+
+.DeckDetailPage__loading {
+  @apply mt-6 text-white/70;
+}
+
+.DeckDetailPage__header {
+  @apply flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 sm:flex-row sm:items-start sm:justify-between;
+}
+
+.DeckDetailPage__title {
+  @apply text-2xl font-semibold leading-snug;
+}
+
+.DeckDetailPage__meta {
+  @apply mt-2 flex flex-wrap items-center gap-3;
+}
+
+.DeckDetailPage__metaChip {
+  @apply rounded-md bg-white/10 px-2 py-1 text-xs text-white/80;
+}
+
+.DeckDetailPage__metaText {
+  @apply text-xs text-white/60;
+}
+
+.DeckDetailPage__rating {
+  @apply flex items-start;
+}
+
+.DeckDetailPage__ratingChip {
+  @apply rounded-full bg-white/10 px-4 py-2 text-sm text-white/80;
+}
+
+.DeckDetailPage__desc {
+  @apply mt-4 rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-white/80;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.DeckDetailPage__section {
+  @apply mt-6;
+}
+
+.DeckDetailPage__sectionTitle {
+  @apply text-lg font-semibold;
+}
+
+.DeckDetailPage__empty {
+  @apply mt-3 rounded-2xl border border-white/10 bg-white/5 p-4 text-white/70;
+}
+
+.DeckDetailPage__cards {
+  @apply mt-4 grid gap-4 lg:grid-cols-5;
+}
+
+.DeckDetailPage__card {
+  @apply rounded-2xl flex flex-col border border-white/10 bg-white/5 p-4;
+}
+
+.DeckDetailPage__cardTop {
+  @apply flex items-center justify-center gap-3;
+}
+
+.DeckDetailPage__cardTitle {
+  @apply text-sm font-semibold text-white/90;
+}
+
+.DeckDetailPage__cardDate {
+  @apply text-xs text-white/60;
+}
+
+.DeckDetailPage__cardRow {
+  @apply mt-3 text-center;
+}
+
+.DeckDetailPage__label {
+  @apply text-xs text-white/50;
+}
+
+.DeckDetailPage__value {
+  @apply mt-1 text-2xl font-bold leading-none text-white/85;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.DeckDetailPage__tags {
+  @apply mt-5 flex flex-wrap gap-2;
+}
+
+.DeckDetailPage__tag {
+  @apply rounded-full bg-white/10 px-3 py-1 text-xs text-white/80;
+}
+
+.DeckDetailPage__muted {
+  @apply text-white/50;
+}
+
+.DeckDetailPage__actions {
+  @apply flex items-center gap-3;
+}
+
+.DeckDetailPage__add {
+  @apply rounded-lg bg-white/15 px-4 py-2 text-sm font-medium transition hover:bg-white/20 disabled:opacity-60;
+}
+
+.DeckDetailPage__bottomBar {
+  @apply fixed bottom-0 left-0 right-0 z-50;
+  @apply flex items-center justify-center py-2;
+  @apply border-t border-white/10 bg-[#060812]/80 backdrop-blur;
+}
+
+.DeckDetailPage__practiseBtn {
+  @apply bg-emerald-400/10 border-emerald-400/15 text-emerald-400 max-w-2xs w-full;
+}
+
+.DeckDetailPage__practiseBtn:hover {
+  @apply bg-emerald-400/20;
+}
+
+.DeckDetailPage__remove {
+  @apply px-4 py-2 rounded-lg font-semibold transition;
+  @apply bg-red-600 text-white hover:bg-red-700 disabled:opacity-60 disabled:cursor-not-allowed;
+}
